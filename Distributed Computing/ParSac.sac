@@ -1,0 +1,48 @@
+/*
+ ============================================================================
+ Name        : PaOrigion.SaC
+ Author      : Yuting zhu
+ Version     :
+ Copyright   : Your copyright notice
+ Description : This is the prallel version of Totient application. The euler part of the    sequence program is beng pralleled. This appliaction use "with" to concurrently calculate euler then put each result into the array i.
+ ============================================================================
+ */
+//Parallel by using origional sequence program
+use StdIO: all;
+use Array: all;
+use CommandLine: all;
+
+inline double euler(double n) {
+
+  length = 0d;
+  b = toi(n);
+  for (i = 1; i <= b; i++) {
+    x = b;
+    y = i;
+    while(y != 0) {
+     t = x % y;
+     x = y;
+     y = t;
+    }
+    if(x == 1) {
+     length=length+1d;
+    }
+  }
+  
+  return (length);
+} 
+
+
+
+int main() {
+
+   lower = String::toi( argv(1) );
+   upper = String::toi( argv(2) );
+  
+  total = with {
+        ( [lower] <= [i] <= [upper]) : euler( tod(i) );
+    			} : fold(+, 0d);
+   printf("%10.0d\n",total);
+    
+    return (0);
+}

@@ -1,0 +1,5 @@
+./eannb inputsEB251.txt >resEB251.txt 
+./eannb inputsEB252.txt >resEB252.txt 
+./eannb inputsEB253.txt >resEB253.txt 
+./eannb inputsEB254.txt >resEB254.txt 
+./eannb inputsEB255.txt >resEB255.txt

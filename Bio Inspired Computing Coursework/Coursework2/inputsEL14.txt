@@ -1,0 +1,13 @@
+seed:               7716
+popsize:     50
+inputs:            9
+hiddens:         12
+outputs:          3
+generations:  100000
+alpha: 0.1
+train:       train.txt
+lines:              106
+test:        test.txt
+lines:             106
+outfile:       EL14.txt
+

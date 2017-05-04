@@ -1,0 +1,5 @@
+./eannl inputsEL11.txt >resEL11.txt 
+./eannl inputsEL12.txt >resEL12.txt 
+./eannl inputsEL13.txt >resEL13.txt 
+./eannl inputsEL14.txt >resEL14.txt 
+./eannl inputsEL15.txt >resEL15.txt

@@ -1,0 +1,4 @@
+Manifest-Version: 1.0
+Permissions: all-permissions
+Codebase: http://www2.macs.hw.ac.uk/~we30/
+Application-Name: webapplet

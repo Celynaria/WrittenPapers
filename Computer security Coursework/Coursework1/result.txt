@@ -1,0 +1,15 @@
+Password:[chirp] is a key. Result plain text is: (á?¸ûq¢HßŸQÄhqˆ
+Password:[contest] is a key. Result plain text is: (C­«J’æ5î(fŠ­y3?n
+Password:[convince] is a key. Result plain text is: ™SÉº¤I=ÿ]cÜ¨ª<y
+Password:[crown] is a key. Result plain text is: ]O´
+Password:[desk] is a key. Result plain text is: ·îÌ)¬ÊÿÉè•{¶¢
+Password:[drove] is a key. Result plain text is: kƒ ò5û6d¤Ö¹lÈê+¢F½#»ÌË
+Password:[embolden] is a key. Result plain text is: <!ÕùÄÄx
+Password:[lion] is a key. Result plain text is: _PŒ“½Õ$1r
+Password:[mustang] is a key. Result plain text is: ÑéoD
+Password:[necromantic] is a key. Result plain text is: ·
+Password:[role] is a key. Result plain text is: Some Crypto Text
+Password:[role] is a key. Result plain text is: 
+Password:[Sherwin] is a key. Result plain text is: ÚÀe)ªg
+Password:[technic] is a key. Result plain text is: &	DjÅ÷ÏIÂ˜Ht¶eü7ïsÌb•áM*
+Password:[woodside] is a key. Result plain text is: ü2cø¿y×š…æ9ñ:ïéü|İ@[

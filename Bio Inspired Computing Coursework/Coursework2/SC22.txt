@@ -1,0 +1,146 @@
+input 0 to hidden 0:  -0.00357214
+input 1 to hidden 0:  -0.143574
+input 2 to hidden 0:  0.308705
+input 3 to hidden 0:  0.215605
+input 4 to hidden 0:  -0.491137
+input 5 to hidden 0:  -0.369529
+input 6 to hidden 0:  0.256695
+input 7 to hidden 0:  -0.674466
+input 8 to hidden 0:  -0.269311
+bias for hidden 0: -0.130342
+input 0 to hidden 1:  -1.0577
+input 1 to hidden 1:  -0.439431
+input 2 to hidden 1:  0.185389
+input 3 to hidden 1:  -1.03446
+input 4 to hidden 1:  0.514882
+input 5 to hidden 1:  -0.186234
+input 6 to hidden 1:  -0.0801814
+input 7 to hidden 1:  -0.640304
+input 8 to hidden 1:  0.701414
+bias for hidden 1: -0.569801
+input 0 to hidden 2:  0.591609
+input 1 to hidden 2:  0.29736
+input 2 to hidden 2:  0.262795
+input 3 to hidden 2:  -0.0603571
+input 4 to hidden 2:  0.0470543
+input 5 to hidden 2:  0.36681
+input 6 to hidden 2:  -0.0818053
+input 7 to hidden 2:  0.333417
+input 8 to hidden 2:  -2.14917
+bias for hidden 2: -0.410427
+input 0 to hidden 3:  0.0279547
+input 1 to hidden 3:  -0.820524
+input 2 to hidden 3:  1.55693
+input 3 to hidden 3:  0.152913
+input 4 to hidden 3:  -0.162506
+input 5 to hidden 3:  0.118708
+input 6 to hidden 3:  1.91263
+input 7 to hidden 3:  1.62773
+input 8 to hidden 3:  -0.317403
+bias for hidden 3: -0.230848
+input 0 to hidden 4:  -1.07759
+input 1 to hidden 4:  -0.175927
+input 2 to hidden 4:  0.168527
+input 3 to hidden 4:  0.451714
+input 4 to hidden 4:  0.603931
+input 5 to hidden 4:  1.78398
+input 6 to hidden 4:  -0.212486
+input 7 to hidden 4:  -0.251097
+input 8 to hidden 4:  -0.204422
+bias for hidden 4: -0.757705
+input 0 to hidden 5:  0.0197376
+input 1 to hidden 5:  -2.23493
+input 2 to hidden 5:  -0.576548
+input 3 to hidden 5:  0.262891
+input 4 to hidden 5:  -0.66632
+input 5 to hidden 5:  0.365702
+input 6 to hidden 5:  1.08186
+input 7 to hidden 5:  -1.98091
+input 8 to hidden 5:  -0.172441
+bias for hidden 5: -2.05769
+input 0 to hidden 6:  -0.23757
+input 1 to hidden 6:  0.522752
+input 2 to hidden 6:  0.343277
+input 3 to hidden 6:  0.0976441
+input 4 to hidden 6:  2.09463
+input 5 to hidden 6:  0.0381192
+input 6 to hidden 6:  0.908206
+input 7 to hidden 6:  0.505947
+input 8 to hidden 6:  1.12619
+bias for hidden 6: -2.55554
+input 0 to hidden 7:  0.523544
+input 1 to hidden 7:  -0.356263
+input 2 to hidden 7:  -0.158212
+input 3 to hidden 7:  -0.495238
+input 4 to hidden 7:  -1.16888
+input 5 to hidden 7:  -0.516579
+input 6 to hidden 7:  2.34381
+input 7 to hidden 7:  -0.277064
+input 8 to hidden 7:  0.708032
+bias for hidden 7: -1.57914
+input 0 to hidden 8:  0.185764
+input 1 to hidden 8:  0.0979898
+input 2 to hidden 8:  0.368969
+input 3 to hidden 8:  -2.24254
+input 4 to hidden 8:  1.50361
+input 5 to hidden 8:  1.15922
+input 6 to hidden 8:  -0.71375
+input 7 to hidden 8:  2.40101
+input 8 to hidden 8:  -1.46932
+bias for hidden 8: 0.350246
+input 0 to hidden 9:  0.352484
+input 1 to hidden 9:  -0.448429
+input 2 to hidden 9:  0.364514
+input 3 to hidden 9:  -1.23478
+input 4 to hidden 9:  -0.875625
+input 5 to hidden 9:  -0.995765
+input 6 to hidden 9:  0.126631
+input 7 to hidden 9:  0.208621
+input 8 to hidden 9:  0.158818
+bias for hidden 9: -0.237014
+input 0 to hidden 10:  0.284069
+input 1 to hidden 10:  -0.901546
+input 2 to hidden 10:  -0.782319
+input 3 to hidden 10:  -1.09688
+input 4 to hidden 10:  -0.276285
+input 5 to hidden 10:  -0.301705
+input 6 to hidden 10:  0.371376
+input 7 to hidden 10:  -0.939976
+input 8 to hidden 10:  0.341858
+bias for hidden 10: -2.18235
+input 0 to hidden 11:  -0.301329
+input 1 to hidden 11:  -0.7444
+input 2 to hidden 11:  -0.0159803
+input 3 to hidden 11:  -0.170782
+input 4 to hidden 11:  -0.258428
+input 5 to hidden 11:  0.355034
+input 6 to hidden 11:  -1.05997
+input 7 to hidden 11:  -0.0219112
+input 8 to hidden 11:  -1.13913
+bias for hidden 11: 0.411594
+hidden 0 to output 0:  -0.340479
+hidden 1 to output 0:  -0.777382
+hidden 2 to output 0:  0.467409
+hidden 3 to output 0:  -0.284155
+hidden 4 to output 0:  -0.327208
+hidden 5 to output 0:  0.0996089
+hidden 6 to output 0:  -0.778072
+hidden 7 to output 0:  0.506241
+hidden 8 to output 0:  0.467842
+hidden 9 to output 0:  -1.17815
+hidden 10 to output 0:  -0.719035
+hidden 11 to output 0:  -0.537027
+bias for output 0: 0.329751
+hidden 0 to output 1:  -0.0622714
+hidden 1 to output 1:  0.380914
+hidden 2 to output 1:  -0.118242
+hidden 3 to output 1:  0.689366
+hidden 4 to output 1:  -0.363659
+hidden 5 to output 1:  -0.0899106
+hidden 6 to output 1:  0.496581
+hidden 7 to output 1:  -0.705177
+hidden 8 to output 1:  0.0589255
+hidden 9 to output 1:  -0.296177
+hidden 10 to output 1:  1.07878
+hidden 11 to output 1:  0.365337
+bias for output 1: -1.16136

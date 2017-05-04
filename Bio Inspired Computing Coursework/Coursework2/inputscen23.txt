@@ -1,0 +1,13 @@
+seed:               476
+popsize:     50
+inputs:            9
+hiddens:         12
+outputs:          2
+generations:  100000
+alpha: 0.1
+train:       trainsc2.txt
+lines:              106
+test:        testsc2.txt
+lines:             106
+outfile:       SC23.txt
+

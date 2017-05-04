@@ -1,0 +1,117 @@
+ 
+// From: http://www.openssl.org/docs/crypto/EVP_EncryptInit.html
+// A simple encryption function, using the EVP interface of OpenSSL
+// Compile: gcc -o e0 encrypt0.c -lcrypto
+// Run:     ./e0
+// Decrypt: openssl bf -d -in cipher0.bin -K 000102030405060708090A0B0C0D0E0F -iv 0102030405060708
+
+#include <errno.h>
+#include <fcntl.h>
+#include <stdio.h>
+#include <unistd.h>
+#include <string.h>
+#include <stdio.h>
+
+// include the EVP headers
+#include <openssl/evp.h>
+
+/*BytesToKey recommened.
+You know that
+aes-128-cbc
+was used to generate the ciphertext from the plaintext. No salting was used during encryption. You also
+know that the numbers in the initialisation vector (IV) are all zeros (not the ASCII character ‘0’). Another
+clue is that the key, used to encrypt this plaintext, is an English word shorter than 16 characters; the word
+that can be found from a typical English dictionary.*/
+
+int do_crack(char *targetFile, char *dictionary){
+
+	unsigned char *ciphertext = NULL;
+	unsigned char *plaintext;
+	unsigned char key[EVP_MAX_KEY_LENGTH];
+	unsigned char iv[EVP_MAX_IV_LENGTH];
+	//unsigned char zeroiv[]="00000000";
+	int i;
+	int len = 0;
+	int plaintext_len;
+	int ciphertext_len;
+
+	printf("Cracking aes 128 file: %s\n", targetFile);
+	printf("Using dictionary file: %s\n", dictionary);
+
+	//buffer for password loaded from dictionary line by line.
+	char password[128];
+	FILE *encrypted = fopen(targetFile, "r");
+	FILE *file = fopen(dictionary, "r");
+	while(!feof(file)){
+		fgets(password, 128, file);
+		//remove newline command.
+		if (password[strlen(password)-1] == '\n')
+			password[strlen(password)-1] = '\0';
+
+		//Process only passwords that have length less than 16 digits.
+		if(strlen(password) < 16){
+			printf("Plain text password: %s\n", password);
+
+			//Transform password into a binary key using openssl.
+			EVP_BytesToKey(EVP_aes_128_cbc(),NULL,NULL,password,strlen(password),1,key,iv);
+		    printf("Key: "); for(i=0; i<EVP_aes_128_cbc()->key_len; ++i) { printf("%02x", key[i]); } printf("\n");
+		    printf("IV: "); for(i=0; i<EVP_aes_128_cbc()->iv_len; ++i) { printf("%02x", iv[i]); } printf("\n");
+
+		    //Load cipher text
+		    fseek(encrypted, 0, SEEK_END);
+		    long encrypted_len = ftell(encrypted);
+		    ciphertext  = malloc(encrypted_len);
+		    fseek(encrypted, 0, SEEK_SET);
+		    fread(ciphertext , 1, encrypted_len, encrypted);
+		    ciphertext_len = encrypted_len;
+
+		    // Create and initialise the context
+		    EVP_CIPHER_CTX *ctx;
+		    ctx = EVP_CIPHER_CTX_new();
+		    EVP_CIPHER_CTX_init(ctx);
+		    // Initialise the decryption.
+		    int decryptResult = EVP_DecryptInit_ex(ctx, EVP_aes_128_cbc(), NULL, key, iv);
+
+		    if(decryptResult == 1){
+
+		    	//Provide cipher text
+		    	decryptResult = EVP_DecryptUpdate(ctx, plaintext, &len, ciphertext, ciphertext_len);
+
+		    	if(decryptResult == 1){
+
+		    		plaintext_len = len;
+			    	//Finalize
+			    	EVP_DecryptFinal_ex(ctx, plaintext + len, &len);
+			    	plaintext_len += len;
+			    	//print plaintext.
+			    	printf("Decrypted text is: %s\n",plaintext);
+
+		    	}else{
+		    		printf ("EVP_DeccryptUpdate failure.\n");
+		    	}
+
+		    }else{
+		        printf ("EVP_DecryptInit_ex failure.\n");
+		    }
+			// Clean up
+			EVP_CIPHER_CTX_free(ctx);
+		}
+	}
+	fclose(file);
+	fclose(encrypted);
+
+return 0;
+
+}
+
+// fairly minimal main function, driving the encryption
+int main(void){
+  // output file
+  static char dictionary[] = "/home/Paul/workspace/filecracker/src/words.txt";
+  static char filename[] = "/home/Paul/workspace/filecracker/src/some.aes-128-cbc";
+
+  // call the main cracking function
+  do_crack(filename,dictionary);
+  printf("CRACKING COMPLETE");
+
+}

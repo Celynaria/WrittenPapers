@@ -1,0 +1,5 @@
+./eannb inputsEB11.txt >resEB11.txt 
+./eannb inputsEB12.txt >resEB12.txt 
+./eannb inputsEB13.txt >resEB13.txt 
+./eannb inputsEB14.txt >resEB14.txt 
+./eannb inputsEB15.txt >resEB15.txt

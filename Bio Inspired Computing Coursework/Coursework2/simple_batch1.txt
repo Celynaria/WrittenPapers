@@ -1,0 +1,5 @@
+./eannb inputsB1.txt >resB1.txt 
+./eannb inputsB2.txt >resB2.txt 
+./eannb inputsB3.txt >resB3.txt 
+./eannb inputsB4.txt >resB4.txt 
+./eannb inputsB5.txt >resB5.txt

@@ -1,0 +1,71 @@
+#MutateDemotePipeline
+#pop.subpop.0.species.pipe.source.1 = ec.gp.breed.MutateDemotePipeline
+
+#gp.breed.mutate-demote.source.0 = ec.select.TournamentSelection
+#gp.breed.mutate-demote.ns.0 = ec.gp.koza.KozaNodeSelector
+#gp.breed.mutate-demote.build.0 = ec.gp.koza.GrowBuilder
+#gp.breed.mutate-demote.maxsize = 750
+#gp.breed.mutate-demote.maxdepth = 18
+
+#gp.breed.mutate-demote.tries = 1
+#
+
+#MutateAllNodesPipeline
+#pop.subpop.0.species.pipe.source.1 = ec.gp.breed.MutateAllNodesPipeline
+
+#gp.breed.mutate-all-nodes.source.0 = ec.select.TournamentSelection
+#gp.breed.mutate-all-nodes.ns.0 = ec.gp.koza.KozaNodeSelector
+#gp.breed.mutate-all-nodes.build.0 = ec.gp.koza.GrowBuilder
+#gp.breed.mutate-all-nodes.maxsize = 750
+#gp.breed.mutate-all-nodes.maxdepth = 18
+
+#gp.breed.mutate-all-nodes.tries = 1
+#
+
+#MutateERCPipeline
+#pop.subpop.0.species.pipe.source.1 = ec.gp.breed.MutateERCPipeline
+
+#gp.breed.mutate-erc.source.0 = ec.select.TournamentSelection
+#gp.breed.mutate-erc.ns.0 = ec.gp.koza.KozaNodeSelector
+#gp.breed.mutate-erc.build.0 = ec.gp.koza.GrowBuilder
+#gp.breed.mutate-erc.maxsize = 750
+#gp.breed.mutate-erc.maxdepth = 17
+
+#gp.breed.mutate-erc.tries = 1
+#
+
+#MutateOneNodePipeline
+#pop.subpop.0.species.pipe.source.1 = ec.gp.breed.MutateOneNodePipeline
+
+#gp.breed.mutate-one-node.source.0 = ec.select.TournamentSelection
+#gp.breed.mutate-one-node.ns.0 = ec.gp.koza.KozaNodeSelector
+#gp.breed.mutate-one-node.build.0 = ec.gp.koza.GrowBuilder
+#gp.breed.mutate-one-node.maxsize = 750
+#gp.breed.mutate-one-node.maxdepth = 17
+
+#gp.breed.mutate-one-node.tries = 1
+#
+
+#MutatePromotePipeline
+#pop.subpop.0.species.pipe.source.1 = ec.gp.breed.MutatePromotePipeline
+
+#gp.breed.mutate-promote.source.0 = ec.select.TournamentSelection
+#gp.breed.mutate-promote.ns.0 = ec.gp.koza.KozaNodeSelector
+#gp.breed.mutate-promote.build.0 = ec.gp.koza.GrowBuilder
+#gp.breed.mutate-promote.maxsize = 750
+#gp.breed.mutate-promote.maxdepth = 17
+
+#gp.breed.mutate-promote.tries = 1
+#
+
+#MutateSwapPipeline
+#pop.subpop.0.species.pipe.source.1 = ec.gp.breed.MutateSwapPipeline
+
+#gp.breed.mutate-swap.source.0 = ec.select.TournamentSelection
+#gp.breed.mutate-swap.ns.0 = ec.gp.koza.KozaNodeSelector
+#gp.breed.mutate-swap.build.0 = ec.gp.koza.GrowBuilder
+#gp.breed.mutate-swap.maxsize = 750
+#gp.breed.mutate-swap.maxdepth = 17
+
+#gp.breed.mutate-swap.tries = 1
+#

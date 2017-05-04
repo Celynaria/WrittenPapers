@@ -1,0 +1,10 @@
+Subpop 0 best fitness of run: Fitness: 74.33333333333333 gen 440
+Subpop 0 best fitness of run: Fitness: 73.66666666666666 gen 454
+Subpop 0 best fitness of run: Fitness: 87.5185185185185 gen 315
+Subpop 0 best fitness of run: Fitness: 73.77777777777777 gen 496
+Subpop 0 best fitness of run: Fitness: 73.88888888888889 gen 396
+Subpop 0 best fitness of run: Fitness: 79.1111111111111 gen 333
+Subpop 0 best fitness of run: Fitness: 74.22222222222221 gen 475
+Subpop 0 best fitness of run: Fitness: 73.88888888888889 gen 410
+Subpop 0 best fitness of run: Fitness: 74.55555555555556 gen 436
+Subpop 0 best fitness of run: Fitness: 68.55555555555554 gen 148

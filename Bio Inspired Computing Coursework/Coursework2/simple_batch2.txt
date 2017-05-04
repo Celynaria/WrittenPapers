@@ -1,0 +1,5 @@
+./eannl inputsL1.txt >resL1.txt 
+./eannl inputsL2.txt >resL2.txt 
+./eannl inputsL3.txt >resL3.txt 
+./eannl inputsL4.txt >resL4.txt 
+./eannl inputsL5.txt >resL5.txt

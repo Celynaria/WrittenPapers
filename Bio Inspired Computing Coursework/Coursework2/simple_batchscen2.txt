@@ -1,0 +1,5 @@
+./eannb inputscen21.txt >rescen21.txt 
+./eannb inputscen22.txt >rescen22.txt 
+./eannb inputscen23.txt >rescen23.txt 
+./eannb inputscen24.txt >rescen24.txt 
+./eannb inputscen25.txt >rescen25.txt

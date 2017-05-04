@@ -1,0 +1,5 @@
+./eannl inputsEL251.txt >resEL251.txt 
+./eannl inputsEL252.txt >resEL252.txt 
+./eannl inputsEL253.txt >resEL253.txt 
+./eannl inputsEL254.txt >resEL254.txt 
+./eannl inputsEL255.txt >resEL255.txt
